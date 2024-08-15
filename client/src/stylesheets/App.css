@@ -1,0 +1,685 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.click {
+  display: inline-block;
+  font-size: 17px;
+  color: white;
+  background-color: deepskyblue;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.welcome {
+  position: absolute;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.welcome h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+#welcome {
+  font-size: 30px;
+}
+
+.welcome p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.welcome input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 4px;
+}
+
+.welcome button {
+  margin: 8px;
+}
+
+#banner {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  background-color: lightgray;
+  border-bottom-style: solid;
+  text-align: center;
+}
+
+#searchbar {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+  font-size: 20px;
+  padding: 4px;
+  width: 20%;
+}
+
+#banner h1 {
+  display: inline-block;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#profile {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 11%;
+}
+
+#logout {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+}
+
+#noquestionsfound {
+  position: relative;
+  width: 100%;
+  top: 20px;
+  text-align: center;
+  font-size: 23px;
+}
+
+#notagsfound {
+  position: relative;
+  width: 100%;
+  top: 20px;
+  text-align: center;
+  font-size: 23px;
+}
+
+#nousersfound {
+  position: relative;
+  width: 100%;
+  top: 20px;
+  text-align: center;
+  font-size: 23px;
+}
+
+#navmenu {
+  width: 15%;
+  text-align: center;
+  font-size: 20px;
+  float: left;
+}
+
+#nav {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#nav li {
+  color: blue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.page {
+  display: inline-block;
+  box-sizing: border-box;
+  border-left-style: dotted;
+  min-height: -webkit-calc(100vh - 92px);
+  width: 85%;
+}
+
+#userinfo {
+  border-bottom-style: dotted;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#userinfo h1 {
+  margin-left: 3%;
+}
+
+#username {
+  margin-top: 0px;
+  margin-bottom: 6px;
+  font-size: 28px;
+}
+
+#email {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#userinfo p {
+  margin-left: 3%;
+  font-size: 15px;
+}
+
+#rtime {
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+#reputation {
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
+#usercontrols {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom-style: dotted;
+}
+
+#usercontrols button {
+  float: none;
+}
+
+#questionsanswered {
+  border-left-style: none;
+  border-right-style: none;
+}
+
+#updatetag {
+  width: 80%;
+  margin-top: 11px;
+}
+
+#deletetag {
+  margin-bottom: 15px;
+}
+
+#users {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#ulist {
+  display: inline-block;
+  width: 100%;
+}
+
+.u {
+  display: inline-block;
+  position: relative;
+  left: 5%;
+  width: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: dotted;
+  text-align: center;
+}
+
+.u p {
+  font-size: 15px;
+}
+
+.uusername {
+  font-size: 15px;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+#deleteuser {
+  margin-bottom: 15px;
+}
+
+#top {
+  display: inline-block;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom-style: dotted;
+}
+
+#top1 {
+  position: relative;
+}
+
+#allquestions {
+  display: inline-block;
+  position: relative;
+  left: 3%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#top1 button {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#top2 {
+  position: relative;
+}
+
+#top2 p {
+  display: inline-block;
+  position: relative;
+  left: 3%;
+  font-size: 20px;
+}
+
+#buttons {
+  display: inline-block;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.controls {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  background-color: white;
+  cursor: pointer;
+  float: left;
+}
+
+#active {
+  border-left-style: none;
+  border-right-style: none;
+}
+
+#qlist {
+  display: inline-block;
+  width: 100%;
+}
+
+.q {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  border-bottom-style: dotted;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.qinfo {
+  position: relative;
+}
+
+.qstats {
+  display: inline-block;
+  position: absolute;
+  margin: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+  font-size: 13px;
+  color: gray;
+  text-align: center;
+}
+
+.qinfo h1 {
+  display: block;
+  position: relative;
+  width: 62%;
+  left: 13%;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: blue;
+  cursor: pointer;
+}
+
+.atime {
+  display: inline-block;
+  position: absolute;
+  margin: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+  font-size: 13px;
+  color: gray;
+}
+
+.qsummary {
+  display: inline-block;
+  position: relative;
+  width: 62%;
+  left: 13%;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.qtags button {
+  position: relative;
+  left: 12.5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+#ttop {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+#ttop h1 {
+  display: inline-block;
+  font-size: 28px;
+}
+
+#tnum {
+  position: absolute;
+  left: 3%;
+}
+
+#ttop button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+}
+
+#tlist {
+  display: inline-block;
+  width: 100%;
+}
+
+.tbox {
+  display: inline-block;
+  position: relative;
+  left: 9.5%;
+  width: 15%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 6%;
+  margin-right: 6%;
+  border-style: dotted;
+  text-align: center;
+}
+
+.tbox button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.tlink {
+  font-size: 15px;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.tquestions {
+  font-size: 15px;
+}
+
+.form {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.form h1 {
+  font-size: 23px;
+}
+
+.form p {
+  font-style: italic;
+}
+
+.form input, .form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 1.25;
+  overflow-y: auto;
+  padding: 5px;
+}
+
+.formerror {
+  color: red;
+}
+
+#postquestion {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#deletequestion {
+  position: relative;
+  left: 20px;
+}
+
+#postanswer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.mandatoryfield {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin-bottom: 40px;
+  color: red;
+}
+
+.vote {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2.5vw;
+  z-index: 1;
+}
+
+.vote p {
+  margin: 5px;
+  text-align: center;
+}
+
+#qtop {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom-style: dotted;
+}
+
+#qtop h1 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#qtop1 {
+  position: relative;
+}
+
+#qanswers {
+  position: absolute;
+  margin: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7vw;
+}
+
+#qtitle {
+  position: relative;
+  width: 50vw;
+  left: 17vw;
+}
+
+#qtop1 button {
+  position: absolute;
+  margin: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2.5vw;
+}
+
+#qtop2 {
+  position: relative;
+}
+
+#qviews {
+  position: absolute;
+  margin: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7vw;
+}
+
+#qtext {
+  display: inline-block;
+  position: relative;
+  width: 50vw;
+  left: 17vw;
+  font-size: 16px;
+}
+
+#qasktime {
+  right: 2.5vw;
+}
+
+#qtop .qtags button {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  left: 16.5vw;
+}
+
+.clist {
+  border-bottom-style: dotted;
+}
+
+.c {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border-left-style: dotted;
+  border-bottom-style: dotted;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 95%;
+  left: 5%;
+}
+
+.ctext {
+  display: inline-block;
+  position: relative;
+  width: 71%;
+  left: 6.5vw;
+  font-size: 16px;
+}
+
+.actions {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: 95%;
+  left: 5%;
+  border-left-style: dotted;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.actions .prevnext {
+  position: relative;
+  left: 6.5vw;
+}
+
+.comment {
+  position: relative;
+  box-sizing: border-box;
+  left: 6.5vw;
+  width: 71%;
+}
+
+#alist {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.a {
+  display: inline-block;
+  position: relative;
+  border-bottom-style: dotted;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.atext {
+  display: inline-block;
+  position: relative;
+  width: 71%;
+  left: 6.5vw;
+  font-size: 16px;
+}
+
+#editanswer {
+  position: relative;
+  left: 6.5vw;
+}
+
+#deleteanswer {
+  position: relative;
+  left: 7.5vw
+}
+
+#answerquestion {
+  position: relative;
+  left: 2.5vw;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
